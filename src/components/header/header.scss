@@ -1,0 +1,23 @@
+.button {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  transition: all 0.3s;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 60%;
+  height: 2px;
+  background-color: red; /* Puedes cambiar el color de la línea aquí */
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.3s;
+  transform-origin: left;
+}
+
+.button:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
