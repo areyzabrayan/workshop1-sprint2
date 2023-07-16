@@ -5,15 +5,14 @@ import './home.scss'
 import Footer from '../footer/footer'
 import Movies from '../movies/Movies'
 
+
 function Home() {
   return (
     <>
     <Header />
-    <Destopk />
-    <Footer />
-    <Movies />
     {/* <Destopk /> */}
-
+    <Movies />
+    <Footer />
     </>
   )
 }
