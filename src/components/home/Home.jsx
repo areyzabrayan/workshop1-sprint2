@@ -7,9 +7,7 @@ import FirstMein from "../firstMein/FirstMein";
 function Home() {
   return (
     <>
-      <Header />
       <FirstMein />
-      <Destopk />
     </>
   );
 }
