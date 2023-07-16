@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap');
+
+.footer {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    color: beige;
+
+    &__sectionA {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 7rem;
+        margin-bottom: 1rem;
+    }
+
+    &__sectionB {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 7rem;
+    }
+
+    &__img {
+        height: 1.5rem;
+    }
+
+    &__iconos {
+        display: flex;
+        gap: 1rem;
+        height: 1.7rem;
+        cursor: pointer;
+    }
+
+    &__icono {
+        object-fit: contain;
+        border-bottom: 2px solid rgb(0, 0, 0);
+        padding-bottom: 0.3rem;
+        transition: border-color 0.2s;
+    }
+
+    &__icono:hover {
+        border-color: rgb(248, 248, 248);
+        transform: scale(1.1);
+    }
+
+
+    &__links {
+        display: flex;
+        gap: 1rem;
+        cursor: pointer;
+    }
+
+    &__titulos {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 2px;
+        transition: all 0.2s;
+    }
+
+    &__titulos:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -8px;
+        width: 60%;
+        height: 3px;
+        background-color: rgb(250, 249, 249);
+        transform: translateX(-50%) scaleX(0);
+        transition: transform 0.3s;
+        font-weight: bolder;
+        transform-origin: left;
+    }
+
+    &__titulos:hover::after {
+        transform: translateX(-50%) scaleX(1);
+    }
+
+    &__span {
+        color: gray;
+    }
+
+}
+
+@media (max-width:375px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+        &__sectionA {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0rem;
+            margin-bottom: 0rem;
+        }
+
+        &__sectionB {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0rem;
+        }
+
+        &__img {
+            height: 1.5rem;
+        }
+
+        &__iconos {
+            display: flex;
+            top: 15rem;
+            position: relative;
+            gap: 1rem;
+            height: 1.7rem;
+        }
+
+        &__icono:hover {
+            border-color: rgb(0, 0, 0);
+        }
+
+
+        &__links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &__titulos:after {
+            background-color: rgb(0, 0, 0);
+        }
+
+        &__span {
+            margin-top: 5rem;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+// desktop
+.movies {
+  width: 80%;
+  margin: 0 10%;
+  .movies__container--uno {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0 50px 0;
+    button {
+      width: 9rem;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 11px;
+    }
+    button:hover {
+      background-color: white;
+      color: black;
+    }
+    h1 {
+      font-size: 30px;
+      font-family: sans-serif;
+      font-weight: 50;
+    }
+  }
+  .movies__container--dos {
+    display: flex;
+    flex-wrap: wrap;
+    .movies__div {
+      width: 25%;
+      .movies__parrafo {
+        position: relative;
+        bottom: 110px;
+        left: 35px;
+        font-size: 20px;
+        color: white;
+        position: relative;
+        font-family: "Montserrat";
+        font-weight: 300;
+        width: 40%;
+      }
+      .movies__imagen {
+        width: 100%;
+      }
+    }
+    .btn__responsive {
+      display: none;
+    }
+  }
+}
+.movies__div:hover {
+  opacity: 65%;
+  cursor: pointer;
+  .movies__parrafo {
+    font-size: 19px;
+    font-weight: bold;
+  }
+}
+
+// table
+@media (max-width: 800px) {
+  .movies {
+    padding-top: 150px;
+    width: 100%;
+    margin: 0;
+    .movies__container--uno {
+      display: flex;
+      flex-direction: column;
+      button {
+        position: absolute;
+        top: 206.2rem;
+        left: 37%;
+        display: none;
+      }
+    }
+
+    .movies__container--dos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 100%;
+      .movies__div {
+        width: 49%;
+        img {
+          width: 100%;
+        }
+      }
+      .btn__responsive {
+        display: block;
+        position: relative;
+        left: 40%;
+        width: 20%;
+        height: 40px;
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}
+
+// mobile
+@media (max-width: 500px) {
+  .movies {
+    width: 100%;
+    margin: 0;
+    .movies__container--uno {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      h1 {
+        font-size: 40px;
+      }
+      button {
+        position: absolute;
+        top: 154rem;
+        left: 37%;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        display: none;
+      }
+    }
+
+    .movies__container--dos {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      .movies__div {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .btn__responsive {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        width: 27%;
+        height: 40px;
+        bottom: 20px;
+        position: relative;
+      }
+    }
+  }
+}

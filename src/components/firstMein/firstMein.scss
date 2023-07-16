@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap");
+
+.container {
+  padding: calc(100% - 90%);
+  width: 100%;
+  //position: relative;
+
+  figure {
+    position: relative;
+    max-width: calc(100% - 35%);
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .container__in {
+    background-color: #fff;
+    padding: 12%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -49%;
+    bottom: -17%;
+    max-width: calc(100% - 30%);
+
+    h2 {
+      font-size: 2rem;
+      font-weight: lighter;
+      font-family: "Montserrat", sans-serif;
+      color: #6b6a6a;
+    }
+
+    p {
+      margin-top: 10%;
+      //padding: 10px;
+      color: #6b6a6a;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 50px 15px;
+    background-color: #fff;
+    position: relative;
+
+    figure {
+      max-width: 100%;
+      img {
+        height: auto;
+      }
+    }
+
+    .container__in {
+      text-align: center;
+      background-color: #fff;
+      padding: 0;
+      position: absolute;
+      left: -7px;
+      bottom: -230px;
+      width: 100%;
+
+      h2 {
+        width: 370px;
+        font-size: 2rem;
+        font-weight: lighter;
+        font-family: "Montserrat", sans-serif;
+        color: #3f3f3f;
+      }
+
+      p {
+        width: 350px;
+        margin-top: 20px;
+        color: #6b6a6a;
+        padding: 5px;
+      }
+    }
+  }
+}
