@@ -11,6 +11,10 @@
   background-position: center;
   height: auto;
 
+  &__figure-img {
+    cursor: pointer;
+  }
+
   &__div {
     display: flex;
     justify-content: space-between;
