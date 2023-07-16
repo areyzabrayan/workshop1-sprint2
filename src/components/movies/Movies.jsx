@@ -12,7 +12,7 @@ const Movies = () => {
             <section className='movies'> 
                 <div className='movies__container--uno'> 
                     <h1>OUR CREATIONS</h1>
-                    <button>SE ALL</button>
+                    <button>SEE ALL</button>
                 </div>
                 <div className='movies__container--dos'> 
                     {
