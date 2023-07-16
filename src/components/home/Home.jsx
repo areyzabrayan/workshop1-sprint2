@@ -1,22 +1,19 @@
-import React from 'react'
-import Header from '../header/Header'
-// import Destopk from '../destopk/destopk'
-import './home.scss'
-import Footer from '../footer/footer'
-import Movies from '../movies/Movies'
-
+import React from "react";
+import Header from "../header/Header";
+import "./home.scss";
+import Footer from "../footer/footer";
+import Movies from "../movies/Movies";
+import FirstMein from "../firstMein/FirstMein";
 
 function Home() {
   return (
     <>
-    <Header />
-    {/* <Destopk /> */}
-    <Movies />
-    <Footer />
+      <Header />
+      <FirstMein />
+      <Movies />
+      <Footer />
     </>
-  )
+  );
 }
 
-
-
-export default Home
+export default Home;
