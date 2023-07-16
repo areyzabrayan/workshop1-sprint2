@@ -28,7 +28,7 @@ import twitter from '../assets/iconos/twitter.svg'
 export const listLinks = [
     {
         id: 1,
-        title: "Abaout"
+        title: "About"
     },
     {
         id: 2,

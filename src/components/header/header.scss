@@ -1,23 +1,63 @@
-.button {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px;
-  transition: all 0.3s;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap");
 
-.button::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 60%;
-  height: 2px;
-  background-color: red; /* Puedes cambiar el color de la línea aquí */
-  transform: translateX(-50%) scaleX(0);
-  transition: transform 0.3s;
-  transform-origin: left;
-}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 100px 0 100px;
+  background-image: url("../../assets/desktop/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
 
-.button:hover::after {
-  transform: translateX(-50%) scaleX(1);
+  &__div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__links {
+    color: white;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+  }
+  &__span {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+  }
+  &__span::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 60%;
+    height: 3px;
+    background-color: rgb(
+      250,
+      249,
+      249
+    ); /* Puedes cambiar el color de la línea aquí */
+    transform: translateX(-50%) scaleX(0);
+    transition: transform 0.3s;
+    font-weight: bolder;
+    transform-origin: left;
+  }
+  &__span:hover::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+  &__title {
+    margin: 120px 0;
+    padding: 30px;
+    border: 2px solid #fff;
+    width: 55%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 70px;
+  }
 }
