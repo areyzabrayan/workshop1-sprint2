@@ -25,7 +25,7 @@ const Movies = () => {
                             
                         ))
                     }
-                    <button className='btn__responsive'>SE ALL</button>
+                    <button className='btn__responsive'>SEE ALL</button>
                 </div>  
             </section>
         }
@@ -44,7 +44,7 @@ const Movies = () => {
                             </div>
                         ))
                     }
-                    <button className='btn__responsive'>SE ALL</button>
+                    <button className='btn__responsive'>SEE ALL</button>
                 </div>
             </section>
         }
